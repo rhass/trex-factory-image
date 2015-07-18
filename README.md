@@ -2,8 +2,8 @@ Dumped with AVRDude 6.0.1.
 
 Dumping Flash and EEPROM
 ========================
-$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:r:trex-factory-image_flash.bin:r
-$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:r:trex-factory-image_eeprom.bin:r
+ - Dumping Flash: `$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:r:trex-factory-image_flash.bin:r`
+ - Dumping EEPROM: `$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:r:trex-factory-image_eeprom.bin:r`
 
 Expected Output when Dumping Flash
 ==================================
@@ -81,6 +81,7 @@ avrdude done.  Thank you.
 
 Restoring Flash and EEPROM Data
 ================================
-
-$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:w:trex-factory-image_flash.bin:r
-$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:w:trex-factory-image_eeprom.bin:r
+Restoring Flash:
+`$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:w:trex-factory-image_flash.bin:r`
+Restoring EEPROM:
+`$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Ueeprom:w:trex-factory-image_eeprom.bin:r`
