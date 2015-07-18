@@ -81,7 +81,7 @@ avrdude done.  Thank you.
 
 Restoring Flash and EEPROM Data
 ================================
-Restoring Flash:
+ - Restoring Flash:
 `$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Uflash:w:trex-factory-image_flash.bin:r`
-Restoring EEPROM:
+ - Restoring EEPROM:
 `$ avrdude -F -v -pm328p -cstk500v1 -P/dev/ttyUSB0 -b57600 -D -Ueeprom:w:trex-factory-image_eeprom.bin:r`
